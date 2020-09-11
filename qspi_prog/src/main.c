@@ -5,7 +5,7 @@
 extern uint32_t _sidata, _sdata, _edata, _sbss, _ebss, _siitcm, _sidtcm, _sitcm, _sdtcm, _eitcm, _edtcm, _estack;
 
 // RAM vector table
-__attribute__((aligned(0x80)))
+__attribute__((aligned(0x200)))
 __attribute__((section(".dtcm_vars")))
 volatile uint32_t irqs[ 120 ];
 
